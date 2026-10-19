@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .main{
+            border: 3px solid red ;
+            width: 100%;
+            height: 80vh;
+
+            /* Makes the child elements obey their parent properties*/
+            /*Child is restricted*/
+            display: flex;
+
+            /*This is with respect to row*/
+            justify-content: center;
+            /* justify-content: flex-start;*/
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+
+            /*This is with respect to column*/
+            align-items: center;
+            /*align-items: flex-start;*/
+            align-items: space-around;
+            align-items: space-between;
+            align-items: space-evenly;
+            
+            flex-direction: row-reverse;
+        }
+
+        .wrap{
+            border: 3px solid black;
+            width: 130px;
+            height: 130px;
+            font-size: 3rem;
+            /*We can use flex in child's elements also
+            to adjust its contenet(values)*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <div class="main">
+        <div class="wrap">1</div>
+        <div class="wrap">2</div>
+        <div class="wrap">3</div>
+        <div class="wrap">4</div>
+    </div>
+</body>
+</html>

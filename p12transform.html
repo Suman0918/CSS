@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Transform Methods</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f2f2f2;
+      font-family: Arial, sans-serif;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ff7b00, #ff3d00);
+      color: white;
+      font-weight: bold;
+      border-radius: 16px;
+      transition: 0.6s ease;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .rotate:hover { transform: rotate(45deg); }
+    .rotateX:hover { transform: rotateX(180deg); }
+    .rotateY:hover { transform: rotateY(180deg); }
+    .rotateZ:hover { transform: rotateZ(45deg); }
+
+    .scale:hover { transform: scale(1.4); }
+    .scaleX:hover { transform: scaleX(1.7); }
+    .scaleY:hover { transform: scaleY(1.7); }
+
+    .skew:hover { transform: skew(20deg, 10deg); }
+    .skewX:hover { transform: skewX(30deg); }
+    .skewY:hover { transform: skewY(30deg); }
+
+    .translate:hover { transform: translate(30px, -20px); }
+    .translateX:hover { transform: translateX(40px); }
+    .translateY:hover { transform: translateY(-30px); }
+
+    .combo:hover {
+      transform: rotate(25deg) scale(1.2) skew(-15deg);
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="box rotate">rotate</div>
+  <div class="box rotateX">rotateX</div>
+  <div class="box rotateY">rotateY</div>
+  <div class="box rotateZ">rotateZ</div>
+
+  <div class="box scale">scale</div>
+  <div class="box scaleX">scaleX</div>
+  <div class="box scaleY">scaleY</div>
+
+  <div class="box skew">skew</div>
+  <div class="box skewX">skewX</div>
+  <div class="box skewY">skewY</div>
+
+  <div class="box translate">translate</div>
+  <div class="box translateX">translateX</div>
+  <div class="box translateY">translateY</div>
+
+  <div class="box combo">combo</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Combinators in CSS */
+        /* Descendent Selector - ( ) */
+        .box-1 h1{
+            background-color: limegreen;
+            color: red;
+            font-size: 25px;
+        }
+
+        /* Child Selector - (>) */
+        .box-1>p{
+            font-family: cursive;
+            background-color: aquamarine;
+        }
+
+        /* Adjacent Sibling Selector - (+) */
+        .S1+h2{
+            background-color: yellow;
+            color: rgb(255, 0, 72);
+        }
+
+        /* General Sibling Selector - (~) */
+        .S1~h4{
+            background-color: lightblue;
+            color: red;
+        }
+        .S1~p{
+            background-color: lightgreen;
+            color: red;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1">
+        <h1>This is the direct child of parent box-1(Sibling1)</h1>
+        <h1>This is the direct child of parent box-1(Sibling2)</h1>
+        <h1>This is the direct child of parent box-1(Sibling3)</h1>
+        <hr>
+        <div>
+            <h1>This is the grand child of box-1</h1>
+            <h1>This is the grand child of box-1</h1>
+            <p>This is the grand child of box-1(paragraph)</p>
+        </div><hr>
+        <p>This is the direct child of parent box-1(paragraph)(Sibling4)</p>
+    </div>
+
+    <hr><hr><hr><hr>
+
+    <div class="box-2">
+        <h1 class="S1">This is the direct child of parent box-2(S1)</h1>
+        <h2>This is the direct child of parent box-2(S2)</h2>
+        <h3>This is the direct child of parent box-2(S3)</h3>
+        <h4>This is the direct child of parent box-2(S4)</h4>
+        <hr>
+        <div>
+            <h5>This is the grand child of box-1</h5>
+            <p>This is the grand child of box-1(paragraph)</p>
+        </div>
+        <hr>
+        <p>This is the direct child of parent box-1(paragraph)(S5)</p>
+    </div>
+</body>
+</html>

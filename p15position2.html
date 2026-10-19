@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 2px solid black;
+            width: 50%;
+            height: 250px;
+           /* position: relative;/* This is to make the child(wrap)
+            obey the parent(main),ifnot given it changes the position
+            with respect to window*/ 
+            
+        }
+        .wrap{
+            border: 1px solid red;
+            width: 0px;
+            height: 100px;
+            background-color: aquamarine;
+           /* position: absolute;*/
+            left: 50%;
+        }
+
+        .fixed{
+            border: 2px solid olive;
+            width: 100%;
+            height: 70px;
+            position: fixed;/*it stay fixed to window throught the web page
+            when scrolled*/
+            z-index: -100;
+        }
+
+        .sticky{
+            border: 3px dotted gray;
+            width: 99%;
+            height: 70px;
+            position: sticky;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <div class="main">
+        <div class="wrap"></div>
+    </div>
+
+    <!--Fixed-->
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <div class="fixed"></div>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <!--sticky-->
+    <div class="sticky"></div>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+    <h1>BTM | PYSPIDERS | BENGALURU</h1>
+</body>
+</html>

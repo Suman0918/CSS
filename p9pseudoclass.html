@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color: orangered;
+            text-decoration: none;/*unvisited links*/
+            font-size: 2rem;
+        }
+        a:visited{
+            color: aqua;/*visited links*/
+        }
+        a:active{
+            color: yellowgreen;
+            background-color: black;/*when the link is clicked 
+            the color changes to yellowgreen and background to black*/
+        }
+        
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 3px solid red;
+            background-color: gray;
+            
+        }
+        .box:hover{
+            border-radius: 50%;/*to make the rectangle to circle when hovered*/
+            color: aqua;
+        }
+        input:focus{
+            background-color: yellow;/*when the input box is clicked the 
+            background color changes to yellow*/
+            color: red;/*the text color changes to red*/
+            width: 40%;
+            height: 50px;
+            border: 3px solid black;
+            border-radius: 10px;
+            font-size: 1.5rem;
+        }
+        /*Child*/
+        h6:last-child{
+            font-size: 2rem;
+        }
+        h4:nth-child(4){
+            background-color: black;
+            color: orange;
+        }
+        h1:first-child{
+            border: 2px dotted blueviolet;
+            display: flex;
+            justify-content: center;
+        }
+        h2:nth-child(2){
+            opacity: 0.63;
+        }
+        h3:nth-child(3){
+            background: linear-gradient(orange,white,green);
+            display: flex;
+            justify-content: center;
+        }
+
+        input:checked{
+         accent-color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.wikipedia.org/">Wikipedia</a>
+    <hr>
+    <div class="box"></div><hr>
+    <input type="text" id >
+
+    <!--First-Child,last-child,nth-child(),checked-->
+
+    <div>
+        <h1>PYspiders</h1>
+        <h2>BTM</h2>
+        <h3>Benagaluru</h3>
+        <h4>Python</h4>
+        <h5>Web Tech</h5>
+        <h6>Data Science</h6>
+     </div>
+
+    <!-- Checked-->
+     <input type="checkbox" id="checked" name="">
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 200px;
+            height: 200PX;
+            background-color: aqua;
+            /*position: static*/
+
+            position: relative;/*the elements around this will remain
+            static when this is moved*/
+            /*left: 300px; RIGHT,top,bottom*/
+
+            position: absolute;/*the elements around this wiil use or
+            takes the blank space left after the box is moved*/
+            top: 200px;
+            left: 500px;
+            z-index: -1;/*to make the box go behind text(-ve value to go behind
+            and +ve value to come front)*/
+           
+          
+
+
+        }
+    </style>
+</head>
+<body>
+   <h1>PYSPIDERS | BTM | BENGALURU</h1>
+    <h1>PYSPIDERS | BTM | BENGALURU</h1>
+    <h1>PYSPIDERS | BTM | BENGALURU</h1>
+    <h1>PYSPIDERS | BTM | BENGALURU</h1>
+    <h1>PYSPIDERS | BTM | BENGALURU</h1>
+    <h1>PYSPIDERS | BTM | BENGALURU</h1>
+    <div class="box"></div>
+    <h1>PYSPIDERS | BTM | BENGALURU</h1>
+    <h1>PYSPIDERS | BTM | BENGALURU</h1>
+    <h1>PYSPIDERS | BTM | BENGALURU</h1>
+    <h1>PYSPIDERS | BTM | BENGALURU</h1>
+    <h1>PYSPIDERS | BTM | BENGALURU</h1>
+    <h1>PYSPIDERS | BTM | BENGALURU</h1>
+    
+    
+</body>
+</html>

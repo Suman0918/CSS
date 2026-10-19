@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+        h1::first-letter{
+            color: orange;
+            font-size: 10rem;
+        }
+        span{
+            color: orange;
+            font-size: 10rem;
+        }
+        h1::after{
+            content: "😂";
+        }
+        h1::before{
+            content: "😃";
+        }
+
+        p{
+            font-size: 3rem;
+        }
+        p::first-line{
+            background-color:lightblue ;
+        }
+        p::selection{
+            color: red;
+            background-color: black;
+        }
+
+        input::placeholder{
+            color: aqua;        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>P<span>y</span>spiders</h1>
+   </div>
+
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+     alias quo ducimus dolorum delectus odit omnis illo aperiam nisi,
+      pariatur provident hic cumque. voluptates suscipit.</p>
+    <hr>
+
+    <input type="text" name="" placeholder="Username">
+    
+
+
+
+
+</body>
+</html>
